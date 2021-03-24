@@ -1,10 +1,32 @@
+.secondary {
+
+  font-size: 22px;
+}
+#top {
+  flex: auto;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+}
+
 body {
-  background-color: steelblue;
+  background-color:LightBlue;
 }
 
 h1 {
-  color: white;
+  font-family:sans-serif;
+  color: gold;
+  background-color:DodgerBlue;
   text-align: center;
+  padding:10px;
+
+}
+
+h2 {
+  font-family:sans-serif;
+  color: gold;
+  background-color:DodgerBlue;
+  text-align:center;
 }
 
 p {
@@ -13,4 +35,129 @@ p {
 
   font-size: 20px;
 
+}
+
+
+h3 {
+  font-family:sans-serif;
+  color: gold;
+  background-color:DodgerBlue;
+    text-align:center;
+}
+
+
+h4 {
+  font-family:sans-serif;
+  color: gold;
+  background-color:DodgerBlue;
+  text-align:center;
+}
+p.class {
+  font-size:12px;
+}
+
+@media (max-width: 667px) {
+  [class*="col-"]
+  {
+    width: 100%
+  }
+}
+
+
+*{
+  box-sizing: border-box;
+}
+.row::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+
+
+@media (max-width: 667px) {
+  background-color: blue;
+  [class*="col-"]
+  {
+    width: 100%
+    }
+    font-family: "Times New Roman", serif;
+}
+
+.img_align {
+  vertical-align: middle;
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.abs {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loan {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+
+footer {
+  background-color:LightBlue;
+  height: 100px;
+  font-family: 'Open Sans', sans-serif;
+  color: Red;
+  padding: 20px;
+  text-align: center;
+
+}
+
+
+.middle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
